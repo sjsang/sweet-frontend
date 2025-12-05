@@ -220,7 +220,7 @@ const ProfileHeader = ({ user, posts, loggedInUserId }) => {
                                 <p className="text-xs md:text-base">người theo dõi</p>
                             </div>
                             <div className="flex flex-col md:flex-row md:gap-1">
-                                <strong>{displayUser.followers.length}</strong>
+                                <strong>{displayUser.following.length}</strong>
                                 <p className="text-xs md:text-base">đang theo dõi</p>
                             </div>
                         </div>
