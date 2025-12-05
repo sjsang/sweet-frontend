@@ -234,9 +234,9 @@ const ProfileHeader = ({ user, posts, loggedInUserId }) => {
                     ></i>
                 )}
                 {openMenu && !isAnotherUser && (
-                    <div className="absolute right-4 top-4 bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-fit z-50">
+                    <div className="absolute right-4 top-4 bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-fit z-30">
                         <p
-                            className="px-3 py-1 hover:bg-gray-100 cursor-pointer"
+                            className="py-2 px-3 rounded-lg hover:bg-gray-100 cursor-pointer text-sm"
                             onClick={() => {
                                 setIsEditing(true);
                                 setOpenMenu(false);
@@ -245,7 +245,7 @@ const ProfileHeader = ({ user, posts, loggedInUserId }) => {
                             Chỉnh sửa
                         </p>
                         <p
-                            className="px-3 py-1 text-red-500 hover:bg-gray-100 cursor-pointer"
+                            className="py-2 px-3 rounded-lg hover:bg-gray-100 text-red-500 cursor-pointer text-sm"
                             onClick={() => {
                                 setShowDeleteModal(true);
                                 setOpenMenu(false);

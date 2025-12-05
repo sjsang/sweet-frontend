@@ -38,9 +38,9 @@ const PostItem = ({ post, loggedInUserId, fromProfile, onDelete, isMe }) => {
                 </div>
 
                 {openMenu && (
-                    <div className="absolute right-5 top-7 bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-fit z-50">
+                    <div className="absolute right-5 top-7  bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-fit z-30">
                         <p
-                            className="py-1 px-2 rounded-lg hover:bg-gray-100 cursor-pointer text-sm"
+                            className="py-2 px-3 rounded-lg hover:bg-gray-100 cursor-pointer text-sm"
                             onClick={(e) => {
                                 e.stopPropagation();
                                 navigate(`/posts/${post._id}/edit`);
@@ -49,13 +49,13 @@ const PostItem = ({ post, loggedInUserId, fromProfile, onDelete, isMe }) => {
                             Chỉnh sửa
                         </p>
                         <p
-                            className="py-1 px-2 rounded-lg hover:bg-gray-100 text-red-500 cursor-pointer text-sm"
+                            className="py-2 px-3 rounded-lg hover:bg-gray-100 text-red-500 cursor-pointer text-sm"
                             onClick={(e) => {
                                 setOpenMenu(false);
                                 onDelete(post._id);
                             }}
                         >
-                            Xóa
+                            Xóa bài viết
                         </p>
                     </div>
                 )}
