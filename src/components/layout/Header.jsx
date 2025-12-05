@@ -41,7 +41,7 @@ const Header = ({ onClickLogo }) => {
             <div className="w-[calc(11/15*100%+40px)] m-auto flex justify-between">
                 <img
                     src="/main-logo.png"
-                    className="w-15 cursor-pointer"
+                    className="w-10 cursor-pointer"
                     onClick={onClickLogo ?? (() => navigate('/'))}
                 />
 

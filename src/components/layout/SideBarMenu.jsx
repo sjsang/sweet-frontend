@@ -8,7 +8,7 @@ const SideBarMenu = ({ activePage }) => {
 
     return (
         <div className="fixed bottom-0 md:sticky md:top-20 z-50 flex justify-evenly 
-                        md:block w-full md:w-[90%] p-2 md:space-y-2
+                        md:block w-full md:w-[90%] p-2 md:p-0 md:space-y-2
                          bg-white md:bg-transparent">
 
             <div className={`${activePage === 'home' ? `${activeClass}` : 'md:bg-white'} p-2 md:shadow rounded-lg`}>
