@@ -108,8 +108,8 @@ const CommentItem = ({ comment, loggedInUserId, onClickDeleteComment, onUpdateCo
             </div>
 
             <i
-                className={`fa-solid fa-ellipsis-vertical p-2 text-gray-500 cursor-pointer visible md:invisible
-                        ${loggedInUserId === comment.user._id ? 'group-hover:visible' : ''}`}
+                className={`fa-solid fa-ellipsis-vertical p-2 text-gray-500 cursor-pointer invisible
+                        ${loggedInUserId === comment.user._id ? 'visible md:invisible group-hover:visible' : ''}`}
                 onClick={() => setOpen(!open)}
             ></i>
         </div>

@@ -27,7 +27,7 @@ const PostList = ({ posts, setPosts, loggedInUserId, loading, fromProfile, isMe 
     }
 
     return (
-        <div className={`${isMe ? 'mt-30' : fromProfile ? 'mt-40' : ''} md:mt-0`}>
+        <div>
             {posts.length !== 0
                 ? (
                     posts.map(post => (

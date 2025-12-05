@@ -23,17 +23,19 @@ const PostItem = ({ post, loggedInUserId, fromProfile, onDelete, isMe }) => {
     return (
         <div className='relative mb-0.5 md:mb-3 md:rounded-lg shadow border-gray-400 overflow-hidden'>
             <div ref={wrapperRef}>
-                {fromProfile && isMe && (
-                    <div
-                        className="absolute top-0 right-0 text-lg p-1 px-2 text-black bg-white rounded-bl-lg cursor-pointer"
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            setOpenMenu(prev => !prev);
-                        }}
-                    >
-                        <i className="fa-solid fa-ellipsis"></i>
-                    </div>
-                )}
+                <div className='w-full absolute top-0 text-white bg-linear-to-b from-black/60 via-black-20 to-transparen'>
+                    {fromProfile && isMe && (
+                        <div
+                            className="w-fit ms-auto text-lg p-2 px-2 cursor-pointer"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setOpenMenu(prev => !prev);
+                            }}
+                        >
+                            <i className="fa-solid fa-ellipsis"></i>
+                        </div>
+                    )}
+                </div>
 
                 {openMenu && (
                     <div className="absolute right-5 top-7 bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-fit z-50">

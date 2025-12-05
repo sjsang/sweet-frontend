@@ -7,14 +7,16 @@ const SideBarMenu = ({ activePage }) => {
     const activeClass = 'bg-linear-to-r from-[#8114b0] via-[#ff4291] to-[#f7ff3c] bg-clip-text text-transparent md:bg-clip-border md:text-white';
 
     return (
-        <div className="fixed bottom-0 md:sticky md:top-20 z-50 flex justify-center gap-10 md:block w-full md:w-[90%] pl-2 md:space-y-2 bg-white md:bg-transparent shadow md:shadow-none">
+        <div className="fixed bottom-0 md:sticky md:top-20 z-50 flex justify-evenly 
+                        md:block w-full md:w-[90%] p-2 md:space-y-2
+                         bg-white md:bg-transparent shadow md:shadow-none">
 
             <div className={`${activePage === 'home' ? `${activeClass}` : 'md:bg-white'} p-2 md:shadow rounded-lg`}>
                 <div
                     className="cursor-pointer flex items-center gap-5"
                     onClick={() => handleNavigate('/')}
                 >
-                    <i class="fa-solid fa-earth-americas text-3xl md:text-2xl"></i>
+                    <i class="fa-solid fa-earth-americas text-2xl"></i>
                     <p className="hidden md:block">Bảng tin</p>
                 </div>
             </div>
@@ -23,7 +25,7 @@ const SideBarMenu = ({ activePage }) => {
                     className="cursor-pointer flex items-center gap-5"
                     onClick={() => handleNavigate('/explore')}
                 >
-                    <i class="fa-regular fa-compass text-3xl md:text-2xl"></i>
+                    <i class="fa-regular fa-compass text-2xl"></i>
                     <p className="hidden md:block">Khám phá</p>
                 </div>
             </div>
@@ -32,7 +34,7 @@ const SideBarMenu = ({ activePage }) => {
                     className="cursor-pointer flex items-center gap-5"
                     onClick={() => handleNavigate('/posts/new')}
                 >
-                    <i class="fa-regular fa-square-plus text-3xl md:text-2xl"></i>
+                    <i class="fa-regular fa-square-plus text-2xl"></i>
                     <p className="hidden md:block">Tạo bài viết</p>
                 </div>
             </div>
