@@ -46,7 +46,11 @@ export default function GoogleLoginButton() {
 
     return (
         <div>
-            <div id="google-login-btn"></div>
+            <div
+                id="google-login-btn"
+                className="w-full block"
+                style={{ width: "100%" }}
+            ></div>
         </div >
     );
 }
